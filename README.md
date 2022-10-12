@@ -1,1 +1,1 @@
-# Netwise Website
+# Netwise Website / hacktoberfest-projects
