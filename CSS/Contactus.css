@@ -7,15 +7,152 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  min-height: 100vh;
+  /* min-height: 100vh; */
+  width: 100%;
+  background: #c8e8e9;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+.body {
+  /* min-height: 100vh; */
+  padding-top: 5rem;
   width: 100%;
   background: #c8e8e9;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+.menu:hover {
+  color: rgb(179, 179, 179);
+}
+.menu {
+  font-size: 26px;
+}
+.site-header {
+  border-bottom: 1px solid #ccc;
+  font-size: medium;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.site-identity h1 {
+  margin: 16px 0;
+  display: inline-block;
+  margin-left: 120px;
+  font-weight: 900;
+}
+.site-navigation ul,
+.site-navigation li {
+  margin: 0;
+  padding: 0;
+}
+.site-navigation li {
+  display: inline-block;
+  margin: 1.4em 1em 1em 1em;
+}
+
+.tittle {
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a,
+.dropbtn {
+  font-size: 26px;
+  text-align: center;
+
+  text-decoration: none;
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+  background-color: white;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  font-size: 25px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.topnav {
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+.topnav .search-container button:hover {
+  background: rgb(202, 190, 190);
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: rgb(174, 167, 167);
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav input[type="text"] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  /* border-radius: 7px; */
+  background-color: oldlace;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
 .container {
-  width: 85%;
+  width: 75vw;
   background: #fff;
   border-radius: 6px;
   padding: 20px 60px 30px 40px;
