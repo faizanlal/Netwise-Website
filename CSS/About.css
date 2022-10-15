@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #c8e8e9;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+.menu:hover {
+  color: rgb(179, 179, 179);
+}
+.menu {
+  font-size: 26px;
+}
+.site-header {
+  border-bottom: 1px solid #ccc;
+  font-family: "Poppins", sans-serif;
+
+  font-size: medium;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.site-identity h1 {
+  margin: 16px 0;
+  display: inline-block;
+  margin-left: 120px;
+  font-weight: 900;
+}
+.site-navigation ul,
+.site-navigation li {
+  margin: 0;
+  padding: 0;
+}
+.site-navigation li {
+  display: inline-block;
+  margin: 1.4em 1em 1em 1em;
+}
+
+.tittle {
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a,
+.dropbtn {
+  font-size: 26px;
+  text-align: center;
+
+  text-decoration: none;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  font-size: 25px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.topnav {
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+.topnav .search-container button:hover {
+  background: rgb(202, 190, 190);
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: rgb(174, 167, 167);
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav input[type="text"] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  /* border-radius: 7px; */
+  background-color: oldlace;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 70vh;
+  width: 75vw;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 12px;
+}
+.container {
+  margin-top: 5rem;
+}
+.image {
+  background-color: #12192c;
+  display: flex;
+  border-radius: 12px 0 0 12px;
+}
+.image img {
+  height: 50vh;
+  margin: 50px auto;
+}
+.content {
+  background-color: #12192c;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0 12px 12px 0;
+  color: #fff;
+}
+.content h2 {
+  text-transform: uppercase;
+  font-size: 36px;
+  letter-spacing: 6px;
+  opacity: 0.9;
+}
+.content span {
+  height: 0.5px;
+  width: 80px;
+  background: #777;
+  margin: 30px 0;
+}
+.content p {
+  padding-bottom: 15px;
+  font-weight: 300;
+  opacity: 0.7;
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 1.7;
+  color: #ffffff;
+}
+.links {
+  margin: 15px 0;
+  cursor: pointer;
+}
+.links li {
+  border: 2px solid #4158d0;
+  list-style: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  width: 160px;
+  text-align: center;
+}
+.links li a {
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+}
+.links li:hover {
+  border-color: #c850c0;
+}
+
+.vertical-line {
+  height: 30px;
+  width: 3px;
+  background: #c850c0;
+  margin: 0 auto;
+}
+.icons {
+  display: flex;
+  padding: 15px 0;
+}
+.icons li {
+  display: block;
+  padding: 5px;
+  margin: 5px;
+}
+.icons li a i {
+  color: white;
+  font-size: 26px;
+  opacity: 0.8;
+}
+.icons li a i:hover {
+  color: #c850c0;
+  cursor: pointer;
+}
+
+/*****************/
+
+@media (max-width: 900px) {
+  section {
+    grid-template-columns: 1fr;
+    width: 100%;
+    border-radius: none;
+  }
+  .image {
+    height: 100vh;
+    border-radius: none;
+  }
+  .content {
+    height: 100vh;
+    border-radius: none;
+  }
+  .content h2 {
+    font-size: 20px;
+    margin-top: 50px;
+  }
+  .content span {
+    margin: 20px 0;
+  }
+  .content p {
+    font-size: 14px;
+  }
+  .links li a {
+    font-size: 14px;
+  }
+  .links {
+    margin: 5px 0;
+  }
+  .links li {
+    padding: 6px 10px;
+  }
+  .icons li a i {
+    font-size: 15px;
+  }
+}
+.credit {
+  text-align: center;
+  color: #000;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.credit a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}

@@ -1,5 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: "Open Sans", sans-serif;
+  background: #c8e8e9;
   margin: 0;
 }
 a {
@@ -10,10 +17,12 @@ a {
   color: rgb(179, 179, 179);
 }
 .menu {
-  font-size: 24px;
+  font-size: 26px;
 }
 .site-header {
   border-bottom: 1px solid #ccc;
+  font-family: "Poppins", sans-serif;
+
   font-size: medium;
   padding-bottom: 10px;
   padding-top: 10px;
@@ -54,7 +63,7 @@ li {
 
 li a,
 .dropbtn {
-  font-size: 24px;
+  font-size: 26px;
   text-align: center;
 
   text-decoration: none;
@@ -101,7 +110,7 @@ li.dropdown {
 }
 
 .topnav .search-container button:hover {
-  background: #ccc;
+  background: rgb(202, 190, 190);
 }
 
 .topnav .search-container button {
@@ -109,7 +118,7 @@ li.dropdown {
   padding: 6px 10px;
   margin-top: 8px;
   margin-right: 16px;
-  background: #ddd;
+  background: rgb(174, 167, 167);
   font-size: 17px;
   border: none;
   cursor: pointer;
@@ -150,7 +159,6 @@ li.dropdown {
   position: absolute;
   left: 0;
   top: 20px;
-  text-transform: uppercase;
   font-size: 13px;
   font-weight: 700;
   background: rgb(221, 9, 129);
@@ -286,7 +294,6 @@ nav ul li a {
   font-size: 17px;
 
   border-radius: 5px;
-  text-transform: uppercase;
 }
 
 .checkbtn {
